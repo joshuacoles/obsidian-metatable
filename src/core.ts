@@ -35,17 +35,6 @@ export interface Settings {
   naked: boolean;
 }
 
-export interface Patch {
-  mode?: Mode;
-  ignoreNulls?: boolean;
-  nullValue?: string;
-  filterKeys?: string[];
-  filterMode?: FilterMode;
-  autolinks?: boolean;
-  naked?: boolean;
-}
-
-
 export function defaultContext(vaultName: string): Context {
   const rules = new RuleStore()
   rules.set('tags', {
@@ -73,6 +62,6 @@ export function defaultContext(vaultName: string): Context {
   return context
 }
 
-export function patchSettings(context: Context, patch: Patch): Context {
+export function patchSettings(context: Context, patch: Partial<Settings>): Context {
   return { ...context, settings: { ...context.settings, ...patch } }
 }
