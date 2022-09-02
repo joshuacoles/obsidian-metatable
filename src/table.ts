@@ -160,7 +160,7 @@ function isObsidianUrl(url: URL | string): boolean {
 }
 
 function isUrl(url: URL | string): boolean {
-  const allowedProtocols = ['http:', 'https:', 'evernote:', 'zotero:']
+  const allowedProtocols = ['http:', 'https:', 'evernote:', 'zotero:', 'dayone:']
 
   return (url instanceof URL && allowedProtocols.some(protocol => url.protocol == protocol))
 }
