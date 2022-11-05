@@ -1,29 +1,23 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "baseUrl": ".",
+    "esModuleInterop": true,
+    "importHelpers": true,
     "inlineSourceMap": true,
     "inlineSources": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
-    "target": "es6",
-    "allowJs": true,
-    "noImplicitAny": false,
     "moduleResolution": "node",
-    "importHelpers": true,
-    "esModuleInterop": true,
-    "types": [
-      "jest",
-      "node"
-    ],
-    "lib": [
-      "dom",
-      "es2019"
-    ]
+    "noImplicitAny": false,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "target": "ESNext",
+    "types": ["jest", "node"]
   },
-  "include": [
-    "src/*.ts",
-    "tests/*.ts"
-  ],
-  "exclude": [
-    "node_modules/*"
-  ]
+  "include": ["src/*.ts", "src/*.tsx", "tests/*.ts"],
+  "exclude": ["node_modules/*"]
 }

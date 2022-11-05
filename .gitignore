@@ -1,6 +1,5 @@
 # npm
 node_modules
-yarn.lock
 
 # build
 main.js
@@ -8,4 +7,8 @@ main.js
 
 # dist
 dist
-test_vault
+
+## docs
+docs/.obsidian/themes
+docs/.obsidian/workspace
+docs/.obsidian/workspace.json
